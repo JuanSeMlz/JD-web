@@ -650,8 +650,8 @@ body,html{
     }
 
    .overlay-image {
-        width: 100%; /* Ajusta el ancho al tamaño de la pantalla */
-        height: auto; /* Mantiene proporciones en pantallas angostas */
+        width: 80%; /* Ajusta el ancho al tamaño de la pantalla */
+    
     }
 
     /* Contenedor de "QUIENES SOMOS" */
@@ -712,7 +712,7 @@ body,html{
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
-        font-size: 0.9em; /* Reduce tamaño de texto */
+        font-size: 0.5em; /* Reduce tamaño de texto */
     }
 
     .popup-btn {
