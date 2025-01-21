@@ -713,6 +713,8 @@ body,html{
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
         font-size: 0.5em; /* Reduce tamaño de texto */
+        flex-direction: colum;
+        grap: 20px;
     }
 
     .popup-btn {
