@@ -639,7 +639,7 @@ body,html{
     }
 
     .menu nav ul li a {
-        font-size: 18px; /* Reduce el tamaño de las fuentes */
+        font-size: 15px; /* Reduce el tamaño de las fuentes */
     }
 
     /* Contenedor principal */
@@ -703,7 +703,7 @@ body,html{
     }
 
     .inst, .fac, .wha {
-        font-size: 6px; /* Ajusta el texto */
+        font-size: 12px; /* Ajusta el texto */
         padding: 5px 10px; /* Reduce el espacio interno */
     }
     
@@ -712,9 +712,8 @@ body,html{
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
+        whidth: 90%;
         font-size: 0.5em; /* Reduce tamaño de texto */
-        flex-direction: colum;
-        grap: 20px;
     }
 
     .popup-btn {
