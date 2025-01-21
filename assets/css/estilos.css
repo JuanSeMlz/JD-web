@@ -609,4 +609,141 @@ body,html{
     .menu-toggle {
         display: block; /* Muestra el botón hamburguesa */
     }
+
+  header {
+        height: auto; /* Permite que el header se ajuste según su contenido */
+    }
+
+    .container__header {
+        flex-direction: column; /* Cambia el diseño a vertical */
+        align-items: center;
+        padding: 10px; /* Agrega espacio interno */
+    }
+
+    /* Ajustar logo */
+    .logo {
+        font-size: 16px; /* Reduce el tamaño del logo */
+        padding: 8px 12px;
+    }
+
+    .logo img {
+        width: 80px; /* Reduce el tamaño de la imagen del logo */
+    }
+
+    /* Menú hamburguesa */
+    .menu {
+        display: none; /* Oculta el menú por defecto */
+    }
+
+    .menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Elementos del menú */
+    .menu nav ul {
+        flex-direction: column; /* Cambia la disposición a vertical */
+        gap: 10px;
+    }
+
+    .menu nav ul li {
+        margin: 5px 0; /* Reduce el margen */
+    }
+
+    .menu nav ul li a {
+        font-size: 18px; /* Reduce el tamaño de las fuentes */
+    }
+
+    /* Contenedor principal */
+    .content {
+        height: auto; /* Permite que la altura se ajuste */
+        padding: 20px; /* Agrega espacio interno */
+        flex-direction: column; /* Cambia a diseño vertical */
+    }
+
+    .content .overlay-image {
+        width: 80%; /* Ajusta el tamaño de la imagen */
+    }
+
+    /* Contenedor de "QUIENES SOMOS" */
+    .content1 {
+        height: auto; /* Permite altura dinámica */
+        padding: 10px; /* Agrega espacio interno */
+    }
+
+    .textoQuienesSomos h2 {
+        font-size: 1.8em; /* Ajusta tamaño de fuente */
+    }
+
+    .textoQuienesSomos p {
+        font-size: 1.2em;
+    }
+
+    /* Botones en content1 */
+    .buttons-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 20px; /* Ajusta el espacio entre elementos */
+    }
+
+    .popup-btn-container {
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+
+    .popup-image {
+        width: 100%; /* Ajusta la imagen */
+    }
+
+    /* Carruseles */
+    .carousel, .carousel2 {
+        height: auto; /* Ajusta altura dinámica */
+    }
+
+    .slide img, .slide2 img {
+        width: 100%; /* Asegura que las imágenes ocupen el espacio disponible */
+    }
+
+    /* Textos flotantes en otras secciones */
+    .textoAnd, .textS, .textw {
+        width: 90%; /* Asegura que no se desborde */
+        font-size: 1em; /* Reduce el tamaño del texto */
+    }
+
+    /* Ajuste de iconos */
+    .inst img, .fac img, .wha img {
+        width: 50px; /* Reduce el tamaño */
+    }
+
+    .inst, .fac, .wha {
+        font-size: 12px; /* Ajusta el texto */
+        padding: 5px 10px; /* Reduce el espacio interno */
+    }
+    
 }
+
+@media (max-width: 480px) {
+    /* Texto y contenedores más pequeños */
+    .textoQuienesSomos, .textoAnd, .textS, .textw {
+        font-size: 0.9em; /* Reduce tamaño de texto */
+    }
+
+    .popup-btn {
+        font-size: 18px; /* Ajusta tamaño de los botones */
+    }
+
+    /* Carrusel */
+    .carousel, .carousel2 {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .slide img, .slide2 img {
+        width: 100%; /* Asegura que las imágenes ocupen el ancho disponible */
+    }
+
+    /* Iconos y botones */
+    .inst img, .fac img, .wha img {
+        width: 40px; /* Iconos más pequeños */
+    }
+}
+
+
