@@ -703,7 +703,7 @@ body,html{
     }
 
     .inst, .fac, .wha {
-        font-size: 12px; /* Ajusta el texto */
+        font-size: 6px; /* Ajusta el texto */
         padding: 5px 10px; /* Reduce el espacio interno */
     }
     
