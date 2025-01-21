@@ -644,13 +644,12 @@ body,html{
 
     /* Contenedor principal */
     .content {
-        height: auto; /* Permite que la altura se ajuste */
-        padding: 20px; /* Agrega espacio interno */
-        flex-direction: column; /* Cambia a diseño vertical */
+        height: 100vh; /* Mantiene la altura completa */
     }
 
-    .content .overlay-image {
-        width: 80%; /* Ajusta el tamaño de la imagen */
+   .overlay-image {
+        width: 100%; /* Ajusta el ancho al tamaño de la pantalla */
+        height: auto; /* Mantiene proporciones en pantallas angostas */
     }
 
     /* Contenedor de "QUIENES SOMOS" */
