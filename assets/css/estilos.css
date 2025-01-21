@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100%;
+    height: 110px;
+    z-index: 100;
+    
+}
+
+.container__header{
+    max-width: 1500px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid #000000;
+}
+
+.logo{
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    border: 5px solid #ffc400;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu nav{
+    margin: 0px 20px;
+    display: flex;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    margin: 10px 16px;
+    display: flex;
+}
+
+.menu nav ul li a{
+    color: black;
+    font-size: 23px;
+    position: relative;
+    background-color: #ffd67f;
+    padding: 8px 11px;
+    color: #000000;
+    border: 5px solid #ffa600;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 300ms;
+    display: flex;
+    margin: auto;
+}
+
+.menu nav ul li a:hover{
+    color: #ffc400;
+    background-color: #ffffff;
+}
+
+body,html{
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 84vh; /* Ajusta la altura al 84% de la ventana */
+    background-color: #FFD700; /* Color dorado */
+    background-image: url("../imagenes/fren/gold-and-white-background-free-vector.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen dorada para que cubra todo el fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Hace posible la superposición de la imagen */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Elimina cualquier tipo de desplazamiento */
+}
+
+
+
+
+/* Imagen sobrepuesta (fren_4k.png) */
+.content .overlay-image {
+    position: absolute;
+    width: 48%; /* Ajusta el tamaño de la imagen sobrepuesta */
+    height: auto;
+    z-index: 1; /* Asegura que la imagen esté sobrepuesta al fondo */
+    animation: slideIn 1.5s ease-out; /* Animación para mover solo la imagen sobrepuesta */
+}
+
+
+/* Animación de movimiento solo para la imagen sobrepuesta */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50%); /* Empieza desde arriba */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* Termina centrada */
+        opacity: 1;
+    }
+}
+
+/* Contenedor QUIENES SOMOS */
+.content1 {
+    background-image: url("../imagenes/fren/gold-and-white-background-free-vector.jpg");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Contenedor de la imagen y el texto */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste de altura para la imagen */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen principal */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+}
+
+/* Texto sobre la imagen */
+.textoQuienesSomos {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(240, 228, 228, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    max-width: 80%; /* Evita que el texto se desborde */
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.textoQuienesSomos h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textoQuienesSomos p {
+    font-size: 1.5em;
+    margin-top: 8px;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Evita que el texto se desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+}
+
+
+/* Contenedor de los botones dentro de content1 */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Se asegura que las imágenes se alineen a los lados de la página */
+    align-items: flex-start;
+    gap: 30px; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Asegura que los botones e imágenes se ajusten en pantallas más pequeñas */
+    margin-top: 60px;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Contenedor individual de cada botón e imagen */
+.popup-btn-container {
+    text-align: center;
+    width: 45%; /* Asegura que las imágenes y botones no ocupen todo el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Espacio entre los botones */
+    transition: transform 0.3s ease; /* Animación suave al pasar el cursor */
+    gap: 10px; /* Agrega espacio entre la imagen y el botón */
+}
+
+.popup-btn-container:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Imagen de cada botón - Hacerla más grande y separada */
+.popup-image {
+    width: 100%; /* Ajusta el ancho al contenedor disponible */
+    max-width: 550px; /* Limita el tamaño máximo de la imagen */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    margin-bottom: 20px; /* Espacio entre la imagen y el botón */
+    margin-top: 90px; /* Ajusta el margen superior para dar más espacio */
+    margin-right: 20px; /* Separación a la derecha entre las imágenes */
+    margin-left: 20px; /* Separación a la izquierda entre las imágenes */
+}
+
+/* Estilo de los botones - Cambio de color al pasar el cursor */
+.popup-btn {
+    background-color: #FFD700; /* Color de fondo inicial del botón */
+    color: white; /* Color del texto */
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones para cambio de color y efecto de escala */
+}
+
+.popup-btn:hover {
+    background-color: #101010; /* Cambio de color al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento al pasar el cursor */
+}
+
+/* Estilo del pop-up */
+.popup {
+    display: none; /* Asegura que el pop-up esté oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+/* Contenido del pop-up */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+/* Botón de cierre del pop-up */
+.close-btn {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
+
+
+
+.content2{
+    width: 100%;
+    height: 122vh;
+    background-image: url("../imagenes/ser/ser-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+
+.content3{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagenes/fren/gold-and-white-background-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+
+.content4{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagenes/fren/gold-and-white-background-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+/* Texto sobre la imagen */
+.textoAnd {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(240, 228, 228, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    max-width: 80%; /* Evita que el texto se desborde */
+    box-sizing: border-box;
+    z-index: 2;
+}
+.textoAnd h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textoAnd p {
+    font-size: 1.5em;
+    margin-top: 8px;
+    font-weight: bold;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Evita que el texto se desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+}
+
+
+
+.carousel {
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta las partes sobrantes de las imágenes */
+    position: relative;
+}
+
+
+/* Contenedor que contiene los slides */
+.slides {
+    display: flex; /* Disposición horizontal de las imágenes */
+    width: calc(10% *8); /* Ancho total para permitir desplazamiento */
+    animation: slide 30s linear infinite; /* Animación del carrusel */
+}
+
+/* Cada slide (imagen) */
+.slide {
+    flex: 0 0 20%; /* Cada slide ocupa 100% del ancho del contenedor */
+    height: 30%;
+}
+
+.slide img {
+    width: 90%;
+    height: 80%;
+    object-fit: contain; /* Ajusta la imagen al contenedor sin deformarla */
+    padding: 10px;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    from {
+        transform: translateX(0); /* Comienza en la primera imagen */
+    }
+    to {
+        transform: translateX(-100%); /* Se desplaza hasta el final de las 4 imágenes originales */
+    }
+}
+
+
+.carousel2 {
+    width: 100%; /* Ancho completo */
+    height: 400px; /* Altura fija */
+    overflow: hidden; /* Oculta las partes sobrantes de las imágenes */
+    position: relative;
+}
+
+
+/* Contenedor que contiene los slides */
+.slides2 {
+    display: flex; /* Disposición horizontal de las imágenes */
+    width: calc(10% *59); /* Ancho total para permitir desplazamiento */
+    animation: slide 28s linear infinite; /* Animación del carrusel */
+}
+
+/* Cada slide (imagen) */
+.slide2 {
+    flex: 0 0 4%; /* Cada slide ocupa 100% del ancho del contenedor */
+    height: 100%;
+}
+
+.slide2 img {
+    width: 90%;
+    height: 40%;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarla */
+    padding: 10px;
+}
+
+/* Animación del carrusel */
+@keyframes slide2 {
+    from {
+        transform: translateX(0); /* Comienza en la primera imagen */
+    }
+    to {
+        transform: translateX(-300%); /* Se desplaza hasta el final de las 4 imágenes originales */
+    }
+}
+
+
+.content5{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagenes/fren/gold-and-white-background-free-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+
+/* Texto sobre la imagen */
+.textS {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(240, 228, 228, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    max-width: 80%; /* Evita que el texto se desborde */
+    box-sizing: border-box;
+    z-index: 2;
+}
+.textS h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textw {
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(240, 228, 228, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    max-width: 80%; /* Evita que el texto se desborde */
+    box-sizing: border-box;
+    z-index: 2;
+}
+.textw h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.inst{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    border: 5px solid #ffc400;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.inst img{
+    width: 100px;
+}
+
+.fac{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    border: 5px solid #ffc400;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.fac img{
+    width: 100px;
+}
+
+
+.wha{
+    position: absolute;
+    top: 42%;
+    left: 65%;
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    border: 5px solid #ffc400;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+.wha img{
+    width: 100px;
+}
+
+
+
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none; /* Por defecto está oculto en pantallas grandes */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú inicialmente */
+        flex-direction: column; /* Cambia a diseño vertical */
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid #000;
+        align-items: center; 
+        justify-content: center; 
+        border-radius: 30px;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .menu.show {
+        display: flex; /* Muestra el menú al hacer clic */
+    }
+
+    .menu nav ul {
+        flex-direction: column; /* Cambia el diseño a vertical */
+    }
+
+    .menu nav ul li {
+        margin-bottom: 10px; /* Espaciado entre los elementos */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+}
