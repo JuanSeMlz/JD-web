@@ -706,23 +706,6 @@ body,html{
         padding: 5px 10px; /* Reduce el espacio interno */
     }
 
-.content2 {
-        height: auto; /* Permite altura dinámica */
-        padding: 10px; /* Agrega espacio interno */
-    }
-
-.content3 {
-        height: auto; /* Permite altura dinámica */
-        padding: 10px; /* Agrega espacio interno */
-    }
-    .content4 {
-        height: auto; /* Permite altura dinámica */
-        padding: 10px; /* Agrega espacio interno */
-    }
-    .content5 {
-        height: auto; /* Permite altura dinámica */
-        padding: 10px; /* Agrega espacio interno */
-    }
     
 }
 
