@@ -24,6 +24,22 @@ header{
     border: 5px solid #000000;
 }
 
+.logo{
+    align-items: center;
+    z-index: 1;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    border: 5px solid #ffc400;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+
+
+
 .logo img{
     width: 100px;
 }
