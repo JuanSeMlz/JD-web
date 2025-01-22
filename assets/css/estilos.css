@@ -97,7 +97,7 @@ body,html{
 
 /* Imagen sobrepuesta (fren_4k.png) */
 .content .overlay-image {
-    position: absolute;
+    position: relative;
     width: 48%; /* Ajusta el tamaño de la imagen sobrepuesta */
     height: auto;
     z-index: 1; /* Asegura que la imagen esté sobrepuesta al fondo */
