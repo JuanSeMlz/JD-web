@@ -501,6 +501,27 @@ body,html{
     margin: 0;
 }
 
+.textE{
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(240, 228, 228, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    max-width: 80%; /* Evita que el texto se desborde */
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.textE h2{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0;
+}
+
 
 
 .inst{
@@ -706,13 +727,20 @@ body,html{
     }
 
     /* Textos flotantes en otras secciones */
-    .textoAnd, .textS, .textw {
+    .textoAnd, .textS, .textw, textE {
         width: 100%; /* Asegura que no se desborde */
         font-size: 0.2em; /* Reduce el tamaño del texto */
     }
 
 
 
+    .textE{
+        top:30%;
+        left:50%;
+    }
+
+
+        
     .textoAnd{
         top: 30%;
         left: 50%;
@@ -760,7 +788,7 @@ body,html{
 
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
-    .textoQuienesSomos, .textoAnd, .textS, .textw {
+    .textoQuienesSomos, .textoAnd, .textS, .textw, textE {
         font-size: 0.1em; /* Reduce tamaño de texto */
     }
 
