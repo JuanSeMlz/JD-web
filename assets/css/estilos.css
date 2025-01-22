@@ -712,10 +712,15 @@ body,html{
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
-        whidth: 90%;
         font-size: 0.5em; /* Reduce tamaño de texto */
     }
 
+.textoS, .textw{
+     flex-direction: column;
+     grap: 20px;
+}
+
+    
     .popup-btn {
         font-size: 18px; /* Ajusta tamaño de los botones */
     }
