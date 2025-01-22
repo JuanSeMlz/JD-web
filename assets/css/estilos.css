@@ -712,10 +712,10 @@ body,html{
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
-        font-size: 0.5em; /* Reduce tamaño de texto */
+        font-size: 0.2em; /* Reduce tamaño de texto */
     }
 
-.textoS, .textw{
+.textS, .textw {
      flex-direction: column;
      grap: 20px;
 }
