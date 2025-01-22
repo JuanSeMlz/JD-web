@@ -707,9 +707,10 @@ body,html{
 
     /* Textos flotantes en otras secciones */
     .textoAnd, .textS, .textw {
-        width: 90%; /* Asegura que no se desborde */
-        font-size: 1em; /* Reduce el tamaño del texto */
+        width: 100%; /* Asegura que no se desborde */
+        font-size: 0.2em; /* Reduce el tamaño del texto */
     }
+
 
     /* Ajuste de iconos */
     .inst img, .fac img, .wha img {
@@ -717,7 +718,7 @@ body,html{
     }
 
     .inst, .fac, .wha {
-        font-size: 12px; /* Ajusta el texto */
+        font-size: 8px; /* Ajusta el texto */
         padding: 5px 10px; /* Reduce el espacio interno */
     }
 
@@ -727,7 +728,7 @@ body,html{
 @media (max-width: 480px) {
     /* Texto y contenedores más pequeños */
     .textoQuienesSomos, .textoAnd, .textS, .textw {
-        font-size: 0.2em; /* Reduce tamaño de texto */
+        font-size: 0.1em; /* Reduce tamaño de texto */
     }
 
 .textS, .textw {
