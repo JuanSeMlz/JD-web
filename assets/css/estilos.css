@@ -712,6 +712,39 @@ body,html{
     }
 
 
+
+    .textoAnd{
+        top: 20%;
+        left: 50%;
+}
+
+    .textS{
+        top: 20%;
+        left: 50%;
+    }
+
+
+    .textw{
+        top: 60%;
+        left: 50%;
+    }
+
+    .inst{
+        top: 30%;
+        left: 30%;
+    }
+
+    .fac{
+        top: 30%;
+        left: 50%;
+    }
+
+    .wha{
+        top: 70%;
+        left: 45%;
+    }
+
+
     /* Ajuste de iconos */
     .inst img, .fac img, .wha img {
         width: 50px; /* Reduce el tamaño */
