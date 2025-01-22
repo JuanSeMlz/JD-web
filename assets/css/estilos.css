@@ -645,8 +645,7 @@ body,html{
     /* Contenedor principal */
   .content {
         height: auto; /* Permite que la altura se ajuste */
-        padding: 20px; /* Agrega espacio interno */
-        flex-direction: column; /* Cambia a diseño vertical */
+       
     }
 
    .overlay-image {
@@ -705,6 +704,24 @@ body,html{
     .inst, .fac, .wha {
         font-size: 12px; /* Ajusta el texto */
         padding: 5px 10px; /* Reduce el espacio interno */
+    }
+
+.content2 {
+        height: auto; /* Permite altura dinámica */
+        padding: 10px; /* Agrega espacio interno */
+    }
+
+.content3 {
+        height: auto; /* Permite altura dinámica */
+        padding: 10px; /* Agrega espacio interno */
+    }
+    .content4 {
+        height: auto; /* Permite altura dinámica */
+        padding: 10px; /* Agrega espacio interno */
+    }
+    .content5 {
+        height: auto; /* Permite altura dinámica */
+        padding: 10px; /* Agrega espacio interno */
     }
     
 }
